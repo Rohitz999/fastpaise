@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>FastPaise – Instant Loan Online</title>
+
+    <!-- SEO -->
+    <meta name="description" content="FastPaise offers instant loans up to ₹2,00,000 with quick approval and zero paperwork.">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fast Paise – Instant Loan</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon (Base64 embedded) -->
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABzElEQVQ4jZ2TTU/CUBCGv7cQCENpSJlYCQgokpQ6gXqIHSlb4A6h0kqJpWhYxCkKSAYUQdSmpaXxgSkI4xHNTk+h7/nA2bd8KEx7zueec+ec2d04U3kHVfwBecwM+gA0jChnsEyMgnTgB0NfSU5FCBOUADWHe8k6kpDcXG9x2m+jh6HQ9W4xdFtfG0pOAlxX3lMpuE0t5Apy/5q4Gxf0DSCrZ4xL5+LrrhYH4ngBY4ZZm1kRsyIAoGGW1SGR/FEa3C4pSknCfaZok4+7yz9/xt1O7IPi6sFqZmaITVViTAH0kk6fA7i9vEIQiKCB4YkKuVK1W0DRtF2N6dX8CiShvG+wW0wjm6hb2uWHzN4ZP+LPTt42m1PccbykltJ0GRKu4MRb8q7sgv+V+R7T0P1HccIsh+z7+0ZlM6r7IShkpsZSiShbk8clJFKMpSyzXx/xYp8Nfa+0Lf7r8yEdLv6jJ1dDKChLqUZUmKxWG1RQ1JKyRL0cTIRu1+IFv+dw8R0zHN+Qd08Z5/dkAm50K+DsDplbHw0AeJjvQG6lZACXtzYhXb8y3X0gAAAABJRU5ErkJggg==">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- Navbar -->
 <header class="header">
     <div class="logo">Fast<span>Paise</span></div>
     <nav>
@@ -19,76 +29,60 @@
     </nav>
 </header>
 
-<!-- Hero Section -->
 <section class="hero">
     <div class="hero-content">
         <h1>Fast Approval. Instant Cash.</h1>
         <p>Get loans up to ₹2,00,000 in minutes.</p>
         <a href="#apply" class="btn primary">Apply Now</a>
     </div>
-    <img src="https://images.unsplash.com/photo-1556745757-8d76bdb6984b" alt="Loan App">
+    <img src="images/hero.jpg" alt="Loan App" loading="lazy">
 </section>
 
-<!-- Stats -->
 <section class="stats">
-    <div class="stat-box">
-        <h2>₹160M+</h2>
-        <p>Loan Disbursed</p>
-    </div>
-    <div class="stat-box">
-        <h2>7M+</h2>
-        <p>Happy Customers</p>
-    </div>
-    <div class="stat-box">
-        <h2>40+</h2>
-        <p>Cities</p>
-    </div>
+    <div><h2>₹160M+</h2><p>Disbursed</p></div>
+    <div><h2>7M+</h2><p>Customers</p></div>
+    <div><h2>40+</h2><p>Cities</p></div>
 </section>
 
-<!-- Calculator -->
 <section id="calculator" class="calculator">
     <h2>Loan Calculator</h2>
     <div class="calc-box">
-        <input type="number" placeholder="Loan Amount (₹)">
-        <input type="number" placeholder="Tenure (Days)">
-        <input type="number" placeholder="Interest %">
-        <button class="btn">Calculate</button>
+        <input type="number" id="amount" placeholder="Loan Amount ₹">
+        <input type="number" id="days" placeholder="Tenure (Days)">
+        <input type="number" id="interest" placeholder="Interest %">
+        <button class="btn" onclick="calculateEMI()">Calculate</button>
+        <p id="result"></p>
     </div>
 </section>
 
-<!-- Features -->
 <section id="features" class="features">
     <h2>Why Choose FastPaise?</h2>
     <div class="feature-grid">
         <div class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/512/3063/3063822.png">
+            <img src="images/instant.png">
             <h3>Instant Approval</h3>
-            <p>Approval within minutes.</p>
         </div>
         <div class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/512/190/190411.png">
-            <h3>Secure</h3>
-            <p>100% safe & encrypted.</p>
+            <img src="images/secure.png">
+            <h3>Secure Platform</h3>
         </div>
         <div class="feature">
-            <img src="https://cdn-icons-png.flaticon.com/512/747/747310.png">
+            <img src="images/paperless.png">
             <h3>No Paperwork</h3>
-            <p>Fully digital process.</p>
         </div>
     </div>
 </section>
 
-<!-- Apply Section -->
 <section id="apply" class="apply">
-    <h2>Ready to Get Started?</h2>
-    <p>Apply now and receive money instantly.</p>
-    <a href="#" class="btn primary">Apply Now</a>
+    <h2>Apply Now</h2>
+    <p>Get money directly in your bank.</p>
+    <a href="#" class="btn primary">Start Application</a>
 </section>
 
-<!-- Footer -->
 <footer>
     <p>© 2026 FastPaise. All Rights Reserved.</p>
 </footer>
 
+<script src="js/main.js"></script>
 </body>
 </html>
